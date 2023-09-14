@@ -1,9 +1,10 @@
 const convertToCelsius = function(fahrenheitDegrees) {
-  celsiusDegrees = (fahrenheitDegrees - 32.0) * (5.0/9.0);
+  let celsiusDegrees = (fahrenheitDegrees - 32.0) * (5.0/9.0);
   return Number(celsiusDegrees.toFixed(1));
 };
 
-const convertToFahrenheit = function() {
+
+const convertToFahrenheit = function(celsiusDegrees) {
 };
 
 // Do not edit below this line
