@@ -1,4 +1,7 @@
 const sumAll = function(num1, num2) {
+    if (num1 < 0 || num2 < 0) {
+        return "ERROR";
+    }
     let small = Math.min(num1, num2);
     let large = Math.max(num1, num2);
     let currentNumber = small;
