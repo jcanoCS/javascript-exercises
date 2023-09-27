@@ -7,24 +7,18 @@ const subtract = function(x, y) {
 };
 
 const sum = function(arr) {
-	let total = 0;
-  arr.forEach((val) => {total += val; });
-  return total;
-};
+  const answer = arr.reduce((num, total) => {
+    return total + num;
+}, 0);
+  return answer;
+}
 
 const multiply = function(arr) {
-  let total;
-  arr.forEach((val) => {
-    if(total){
-      total *= val;
-    }
-    else {
-      total = val;
-    } 
+  return arr.reduce((accumulator, num) => {
+    return accumulator * num;
   });
-
-  return total;
 };
+
 
 const power = function(base, exponent) {
 	return base ** exponent;
